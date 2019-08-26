@@ -12,6 +12,7 @@
 		457F2EFF2310594F0022D74A /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F2EFE2310594F0022D74A /* AreaViewController.swift */; };
 		457F2F01231059750022D74A /* MassOfACubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F2F00231059750022D74A /* MassOfACubeViewController.swift */; };
 		457F2F032310598F0022D74A /* UnitConveterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F2F022310598F0022D74A /* UnitConveterViewController.swift */; };
+		45EB48FD23144DA50028D507 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB48FC23144DA50028D507 /* CalculatorViewController.swift */; };
 		45F8006F230F0BB700A345F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8006E230F0BB700A345F6 /* AppDelegate.swift */; };
 		45F80071230F0BB700A345F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80070230F0BB700A345F6 /* ViewController.swift */; };
 		45F80074230F0BB700A345F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F80072230F0BB700A345F6 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		457F2EFE2310594F0022D74A /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		457F2F00231059750022D74A /* MassOfACubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassOfACubeViewController.swift; sourceTree = "<group>"; };
 		457F2F022310598F0022D74A /* UnitConveterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConveterViewController.swift; sourceTree = "<group>"; };
+		45EB48FC23144DA50028D507 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		45F8006B230F0BB700A345F6 /* FormulaCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F8006E230F0BB700A345F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F80070230F0BB700A345F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				457F2EFE2310594F0022D74A /* AreaViewController.swift */,
 				457F2F00231059750022D74A /* MassOfACubeViewController.swift */,
 				457F2F022310598F0022D74A /* UnitConveterViewController.swift */,
+				45EB48FC23144DA50028D507 /* CalculatorViewController.swift */,
 				45F80072230F0BB700A345F6 /* Main.storyboard */,
 				45F80075230F0BB800A345F6 /* Assets.xcassets */,
 				45F80077230F0BB800A345F6 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			files = (
 				457F2EFF2310594F0022D74A /* AreaViewController.swift in Sources */,
 				457F2EFB231058DF0022D74A /* PythagoreanTheoremViewController.swift in Sources */,
+				45EB48FD23144DA50028D507 /* CalculatorViewController.swift in Sources */,
 				457F2F01231059750022D74A /* MassOfACubeViewController.swift in Sources */,
 				45F80071230F0BB700A345F6 /* ViewController.swift in Sources */,
 				457F2EFD231059400022D74A /* QuadraticFormulaViewController.swift in Sources */,
