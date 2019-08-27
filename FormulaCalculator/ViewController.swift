@@ -15,16 +15,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func pythagoreanTheoremSegue(_ sender: Any) {
+        performSegue(withIdentifier: "segueToPythagorean", sender: nil)
     }
     @IBAction func quadraticFunctionSegue(_ sender: Any) {
+        performSegue(withIdentifier: "segueToQuadratics", sender: nil)
     }
     @IBAction func massOfACubeSegue(_ sender: Any) {
+        performSegue(withIdentifier: "sequeToMass", sender: nil)
     }
     @IBAction func unitConverterSegue(_ sender: Any) {
+        performSegue(withIdentifier: "sequeToUnitConverter", sender: nil)
     }
     @IBAction func areaSegue(_ sender: Any) {
+        performSegue(withIdentifier: "segueToArea", sender: nil)
     }
     @IBAction func calculatorSegue(_ sender: Any) {
+        performSegue(withIdentifier: "sequeToCalculator", sender: nil)
     }
     
 }
