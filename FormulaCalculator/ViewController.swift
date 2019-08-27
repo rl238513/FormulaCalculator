@@ -14,7 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func pythagoreanTheoremSegue(_ sender: Any) {
+    }
+    @IBAction func quadraticFunctionSegue(_ sender: Any) {
+    }
+    @IBAction func massOfACubeSegue(_ sender: Any) {
+    }
+    @IBAction func unitConverterSegue(_ sender: Any) {
+    }
+    @IBAction func areaSegue(_ sender: Any) {
+    }
+    @IBAction func calculatorSegue(_ sender: Any) {
+    }
+    
 }
 
