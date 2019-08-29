@@ -229,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ax^2+bx+c=0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-f1-p82">
-                                <rect key="frame" x="134" y="142" width="106" height="21"/>
+                                <rect key="frame" x="154" y="142" width="106" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -270,10 +270,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quadratic Formula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t03-qg-nah">
+                                <rect key="frame" x="108" y="104" width="199" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-fv-ZZJ">
+                                <rect key="frame" x="157" y="586" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.89768418940000005" blue="0.1415343624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="solveQuadraticOnTapped:" destination="YaB-2U-p3c" eventType="touchUpInside" id="V77-do-vMc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XNb-eo-lfm"/>
                     </view>
+                    <connections>
+                        <outlet property="firstValueTextBox" destination="t1N-Nh-Lqe" id="v3b-xh-d0v"/>
+                        <outlet property="secondValueTextBox" destination="N5K-TC-8sv" id="ulF-zG-hbY"/>
+                        <outlet property="thirdValueTextBox" destination="G6D-vv-1uN" id="NpV-UL-aKK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnd-UD-eqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

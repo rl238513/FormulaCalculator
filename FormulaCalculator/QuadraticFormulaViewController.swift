@@ -10,21 +10,47 @@ import UIKit
 
 class QuadraticFormulaViewController: UIViewController {
 
+    @IBOutlet weak var firstValueTextBox: UITextField!
+    @IBOutlet weak var secondValueTextBox: UITextField!
+    @IBOutlet weak var thirdValueTextBox: UITextField!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func solveQuadraticOnTapped(_ sender: Any) {
+        
+        guard let aValue = Int(firstValueTextBox.text!) else {
+            print("no a value")
+            return
+        }
+        guard let bValue = Int(secondValueTextBox.text!) else {
+            print("no b value")
+            return
+        }
+        guard let cValue = Int(thirdValueTextBox.text!) else {
+            print("no c value")
+            return
+        }
+        
+        
+        
+        
+ 
+        
     }
-    */
+    
+    
+    
+    
+    
+    
 
 }
