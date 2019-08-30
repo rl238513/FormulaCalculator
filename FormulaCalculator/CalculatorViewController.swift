@@ -24,13 +24,59 @@ class CalculatorViewController: UIViewController {
 
     }
     @IBAction func additionButton(_ sender: Any) {
+        labelOne.resignFirstResponder()
+        labelTwo.resignFirstResponder()
+        
+        if let number1 = Double(labelOne.text!), let number2 = Double(labelTwo.text!){
+            let sum = number1 + number2
+            labelAnswer.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     @IBAction func subtractionButton(_ sender: Any) {
+        labelOne.resignFirstResponder()
+        labelTwo.resignFirstResponder()
+        
+        if let number1 = Double(labelOne.text!), let number2 = Double(labelTwo.text!){
+            let sum = number1 - number2
+            labelAnswer.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     @IBAction func multiplacationButton(_ sender: Any) {
+        labelOne.resignFirstResponder()
+        labelTwo.resignFirstResponder()
+        
+        if let number1 = Double(labelOne.text!), let number2 = Double(labelTwo.text!){
+            let sum = number1 * number2
+            labelAnswer.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     @IBAction func divisionButton(_ sender: Any) {
+        labelOne.resignFirstResponder()
+        labelTwo.resignFirstResponder()
+        
+        if let number1 = Double(labelOne.text!), let number2 = Double(labelTwo.text!){
+            let sum = number1 / number2
+            labelAnswer.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
-    
-
 }
