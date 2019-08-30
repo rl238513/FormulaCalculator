@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXg-Ms-Zlz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bws-48-v63">
                                 <rect key="frame" x="67" y="280" width="280" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,6 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gBl-sn-gQQ"/>
                     <connections>
+                        <outlet property="background" destination="jXg-Ms-Zlz" id="ANp-7s-PXK"/>
                         <segue destination="bwH-8m-OVd" kind="show" identifier="segueToPythagorean" id="FZt-RP-Z4m"/>
                         <segue destination="PPk-vQ-oAs" kind="show" identifier="sequeToMass" id="BDU-wF-hXG"/>
                         <segue destination="Q4r-9y-HOS" kind="show" identifier="sequeToUnitConverter" id="LqB-hm-yoA"/>
