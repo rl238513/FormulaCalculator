@@ -10,9 +10,26 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var labelOne: UITextField!
+    @IBOutlet weak var labelTwo: UITextField!
+    @IBOutlet weak var labelAnswer: UILabel!
+    
     override func viewDidLoad() {
+        self.background.image = UIImage (named: "Untitled29")
+        self.background.layer.cornerRadius =
+            self.background.frame.width / 2
+        self.background.layer.masksToBounds = true
         super.viewDidLoad()
 
+    }
+    @IBAction func additionButton(_ sender: Any) {
+    }
+    @IBAction func subtractionButton(_ sender: Any) {
+    }
+    @IBAction func multiplacationButton(_ sender: Any) {
+    }
+    @IBAction func divisionButton(_ sender: Any) {
     }
     
 

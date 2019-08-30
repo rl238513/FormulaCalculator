@@ -13,12 +13,17 @@ class QuadraticFormulaViewController: UIViewController {
     @IBOutlet weak var firstValueTextBox: UITextField!
     @IBOutlet weak var secondValueTextBox: UITextField!
     @IBOutlet weak var thirdValueTextBox: UITextField!
+    @IBOutlet weak var background: UIImageView!
     
     
     
     
     
     override func viewDidLoad() {
+        self.background.image = UIImage (named: "Untitled29")
+        self.background.layer.cornerRadius =
+            self.background.frame.width / 2
+        self.background.layer.masksToBounds = true
         super.viewDidLoad()
 
     }
