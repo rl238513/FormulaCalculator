@@ -40,14 +40,20 @@ class QuadraticFormulaViewController: UIViewController {
             return
         }
         
-        
-        
-        
- 
+        var xValue = Int()
         
     }
     
-    
+    func quadraticEquation(a: Int, b: Int, c: Int) {
+        var x = Int()
+        
+        let aSimplified = (a * x) * (a * x)
+        let bSimplified = (b * x) + (b * x)
+        let cSimplified = c
+         let result = (x + a) * (x + a) + (b * x)
+        
+        
+    }
     
     
     
