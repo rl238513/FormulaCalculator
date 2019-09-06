@@ -10,8 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.background.image = UIImage (named: "Untitled29")
+        self.background.layer.cornerRadius =
+            self.background.frame.width / 2
+        self.background.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     @IBAction func pythagoreanTheoremSegue(_ sender: Any) {
