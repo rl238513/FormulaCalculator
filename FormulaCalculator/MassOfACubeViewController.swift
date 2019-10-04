@@ -47,10 +47,32 @@ class MassOfACubeViewController: UIViewController {
     }
     
     @IBAction func answerButton2(_ sender: Any) {
+        volumeTextField.resignFirstResponder()
+        densityTextField.resignFirstResponder()
         
+        if let number1 = Double(volumeTextField.text!), let number2 = Double(densityTextField.text!){
+            let sum = number1 * number2
+            answer2.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func answerButton3(_ sender: Any) {
+        volume2TextField.resignFirstResponder()
+        mass2TextField.resignFirstResponder()
         
+        if let number1 = Double(mass2TextField.text!), let number2 = Double(volume2TextField.text!){
+            let sum = number1 * number2
+            answer3.text = String(sum)
+        }
+        else {
+            let alert = UIAlertController(title: "empty textfield", message: "good job dumb dumb want some gum gum", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
