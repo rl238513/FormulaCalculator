@@ -51,7 +51,7 @@ class MassOfACubeViewController: UIViewController {
         densityTextField.resignFirstResponder()
         
         if let number1 = Double(volumeTextField.text!), let number2 = Double(densityTextField.text!){
-            let sum = number1 * number2
+            let sum = number1 / number2
             answer2.text = String(sum)
         }
         else {
