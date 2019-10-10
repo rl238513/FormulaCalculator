@@ -18,7 +18,6 @@ class QuadraticFormulaViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         self.background.image = UIImage (named: "Untitled29")
         self.background.layer.cornerRadius =
@@ -36,14 +35,17 @@ class QuadraticFormulaViewController: UIViewController {
             print("no a value")
             return
         }
+        
         guard let bValue = Int(secondValueTextBox.text!) else {
             print("no b value")
             return
         }
+        
         guard let cValue = Int(thirdValueTextBox.text!) else {
             print("no c value")
             return
         }
+        
         
         var xValue = Int()
         
@@ -53,9 +55,13 @@ class QuadraticFormulaViewController: UIViewController {
         var x = Int()
         
         let aSimplified = (a * x) * (a * x)
+        
         let bSimplified = (b * x) + (b * x)
+        
         let cSimplified = c
-         let result = (x + a) * (x + a) + (b * x)
+        
+         let result = (x + a) * (x + a) + ((b * x) + (b * x)) + c
+        
         
         
     }
