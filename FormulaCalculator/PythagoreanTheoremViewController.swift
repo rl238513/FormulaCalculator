@@ -11,6 +11,10 @@ import UIKit
 class PythagoreanTheoremViewController: UIViewController {
 
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var aValueTextField: UITextField!
+    @IBOutlet weak var bValueTextField: UITextField!
+    @IBOutlet weak var cValueTextField: UITextField!
+    @IBOutlet weak var answerLabel: UILabel!
     
     override func viewDidLoad() {
         self.background.image = UIImage (named: "Untitled29")
@@ -18,9 +22,19 @@ class PythagoreanTheoremViewController: UIViewController {
             self.background.frame.width / 2
         self.background.layer.masksToBounds = true
         super.viewDidLoad()
-
     }
     
-
-
+    @IBAction func solveButtonOnTapped(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

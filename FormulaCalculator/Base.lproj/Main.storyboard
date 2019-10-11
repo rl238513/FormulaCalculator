@@ -164,13 +164,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89768418940000005" blue="0.1415343624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SOLVE"/>
+                                <connections>
+                                    <action selector="solveButtonOnTapped:" destination="bwH-8m-OVd" eventType="touchUpInside" id="jc8-Fi-CCF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0XD-fc-cMG"/>
                     </view>
                     <connections>
+                        <outlet property="aValueTextField" destination="Cbq-U7-cWS" id="l0z-df-zgp"/>
+                        <outlet property="answerLabel" destination="EMb-qy-cit" id="661-0i-ms3"/>
+                        <outlet property="bValueTextField" destination="4QO-4W-syK" id="fgI-Ka-Hcf"/>
                         <outlet property="background" destination="zTT-HA-mOU" id="Uwd-75-ncg"/>
+                        <outlet property="cValueTextField" destination="ccr-Du-viw" id="mZO-cp-dxb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V79-hX-xRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
