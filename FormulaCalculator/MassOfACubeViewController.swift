@@ -10,13 +10,13 @@ import UIKit
 
 class MassOfACubeViewController: UIViewController {
 
-    @IBOutlet weak var massTextField: UITextField!
-    @IBOutlet weak var densityTextField: UITextField!
-    @IBOutlet weak var volumeTextField: UITextField!
     @IBOutlet weak var background: UIImageView!
-    @IBOutlet weak var density2TextField: UITextField!
-    @IBOutlet weak var volume2TextField: UITextField!
-    @IBOutlet weak var mass2TextField: UITextField!
+    @IBOutlet weak var volumeTextField2: UITextField!
+    @IBOutlet weak var densityTextField2: UITextField!
+    @IBOutlet weak var volumeTextField: UITextField!
+    @IBOutlet weak var massTextField2: UITextField!
+    @IBOutlet weak var densityTextField: UITextField!
+    @IBOutlet weak var massTextField: UITextField!
     @IBOutlet weak var answer3: UILabel!
     @IBOutlet weak var answer2: UILabel!
     @IBOutlet weak var answer1: UILabel!
@@ -32,11 +32,11 @@ class MassOfACubeViewController: UIViewController {
     }
     
     @IBAction func answerButton(_ sender: Any) {
-        density2TextField.resignFirstResponder()
+        densityTextField.resignFirstResponder()
         massTextField.resignFirstResponder()
         
-        if let number1 = Double(massTextField.text!), let number2 = Double(density2TextField.text!){
-            let sum = number1 * number2
+        if let number1 = Double(massTextField.text!), let number2 = Double(densityTextField.text!){
+            let sum = number1 / number2
             answer1.text = String(sum)
         }
         else {
@@ -48,9 +48,9 @@ class MassOfACubeViewController: UIViewController {
     
     @IBAction func answerButton2(_ sender: Any) {
         volumeTextField.resignFirstResponder()
-        densityTextField.resignFirstResponder()
+        massTextField.resignFirstResponder()
         
-        if let number1 = Double(volumeTextField.text!), let number2 = Double(densityTextField.text!){
+        if let number2 = Double(volumeTextField.text!), let number1 = Double(massTextField.text!){
             let sum = number1 / number2
             answer2.text = String(sum)
         }
@@ -62,10 +62,10 @@ class MassOfACubeViewController: UIViewController {
     }
     
     @IBAction func answerButton3(_ sender: Any) {
-        volume2TextField.resignFirstResponder()
-        mass2TextField.resignFirstResponder()
+        volumeTextField2.resignFirstResponder()
+        densityTextField2.resignFirstResponder()
         
-        if let number1 = Double(mass2TextField.text!), let number2 = Double(volume2TextField.text!){
+        if let number1 = Double(densityTextField2.text!), let number2 = Double(volumeTextField2.text!){
             let sum = number1 * number2
             answer3.text = String(sum)
         }
